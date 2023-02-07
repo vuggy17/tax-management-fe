@@ -1,0 +1,101 @@
+.card {
+  position: relative;
+  background-image: url("./tax-blog.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.842) 100%
+    ),
+    url(/assets/img/rests/scenery.jpg);
+}
+
+.card .ant-typography {
+  color: white;
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: large;
+  z-index: 100;
+  /* opacity: 0; */
+  /* transform: translateY(-50px); */
+}
+
+/* .card:hover .ant-typography {
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  transition-property: all;
+} */
+
+
+.card-calc {
+  position: relative;
+  background-image: url("./tax-calc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+
+}
+
+.card-calc:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.842) 100%
+    ),
+    url(/assets/img/rests/scenery.jpg);
+}
+
+.card-calc .ant-typography {
+  color: white;
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: large;
+  z-index: 100;
+  /* opacity: 0; */
+  /* transform: translateY(-50px); */
+}
+
+/* .card-calc:hover .ant-typography {
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  transition-property: all;
+} */
+
+.suggestion {
+  margin-top: 36px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
