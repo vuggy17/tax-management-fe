@@ -6,7 +6,7 @@ import { Row, Col } from 'antd';
 import { getChildrenToRender } from './utils';
 import { isImg } from './utils';
 import { Link } from 'react-router-dom';
-
+import logo from '../assets/logo.svg'
 class Footer extends React.Component {
   static defaultProps = {
     className: 'footer1',
@@ -20,7 +20,8 @@ class Footer extends React.Component {
           <h2 {...title}>
             {typeof title.children === 'string' &&
               title.children.match(isImg) ? (
-              <Link to="/"> <img src={title.children} width="100%" alt="img" />
+              <Link to="/" className=''> 
+              <img src={logo} width={180} height={60} alt="img" />
               </Link>
               // <div className='block w-[100px] mr-2'>
               //   <Link to="/">
@@ -59,7 +60,7 @@ class Footer extends React.Component {
           >
             {childrenToRender}
           </QueueAnim>
-          <TweenOne
+          {/* <TweenOne
             animation={{ y: '+=30', opacity: 0, type: 'from' }}
             key="copyright"
             {...dataSource.copyrightWrapper}
@@ -69,7 +70,7 @@ class Footer extends React.Component {
                 {dataSource.copyright.children}
               </div>
             </div>
-          </TweenOne>
+          </TweenOne> */}
         </OverPack>
       </div>
     );

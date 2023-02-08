@@ -3,7 +3,7 @@ import TweenOne from 'rc-tween-one';
 import { Menu } from 'antd';
 import { getChildrenToRender } from './utils';
 import { Link } from 'react-router-dom';
-
+import notextlogo from '../assets/logo_notext.svg'
 const { Item, SubMenu } = Menu;
 
 class Header3 extends React.Component {
@@ -86,19 +86,8 @@ class Header3 extends React.Component {
             animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
             {...dataSource.logo}
           >
-            <Link to="/">
-              <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_2_9)">
-                  <path d="M80 0H0V81H80V0Z" fill="#1A87DD" />
-                  <path d="M36.4657 24.1939L24.2715 53.916C23.7577 55.1681 23.9837 56.5828 24.861 57.6077C25.7385 58.6327 27.0905 59.0613 28.3893 58.7263L38.6472 56.0808V43.1279C38.6472 42.5319 39.125 42.0486 39.7144 42.0486C40.3037 42.0486 40.7816 42.5318 40.7816 43.1279V56.0808L51.0394 58.7263C52.3383 59.0613 53.6903 58.6327 54.5677 57.6077C55.4468 56.5807 55.67 55.1659 55.1572 53.9159L42.963 24.1938C42.4079 22.8406 41.163 22 39.7144 22C38.2658 22 37.0209 22.8406 36.4657 24.1939Z" fill="white" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_2_9">
-                    <rect width="80" height="81" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-
+            <Link to="/" className='logo jzl0qcpyjra-editor_css'>
+              <img width="100%" height={50} src={notextlogo} alt="img" />
             </Link>
 
           </TweenOne>
