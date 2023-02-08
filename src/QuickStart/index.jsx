@@ -11,7 +11,7 @@ export default function QuickStart() {
             <Typography.Title className='text-center' style={{
                 marginTop: 40
             }} level={3}>
-                What are you looking for
+                Bạn đang muốn truy cập:
             </Typography.Title>
             <br />
             <br />
@@ -22,7 +22,7 @@ export default function QuickStart() {
                             width: 400,
                             height: 500
                         }} className='bg-white hover:shadow object-contain relative card'>
-                            <Typography.Text className=''>Tax blog</Typography.Text>
+                            <Typography.Text className=''>Thông tin thuế</Typography.Text>
                         </div>
                     </Link>
                     <Link to="caculate">
@@ -30,7 +30,7 @@ export default function QuickStart() {
                             width: 400,
                             height: 500
                         }} className='bg-white hover:shadow object-contain relative card-calc'>
-                            <Typography.Text className=''>Caculate tax</Typography.Text>
+                            <Typography.Text className=''>Tra cứu dư nợ</Typography.Text>
 
                         </div>
                     </Link>
@@ -38,7 +38,7 @@ export default function QuickStart() {
             </div>
             <div className='flex justify-center'>
                 <Typography.Text className='suggestion' type='secondary'>
-                    Not sure what you need? <Link to="/">Look at our services</Link>
+                    Liên hệ hỗ trợ <Link to="/">+841900000</Link>
                 </Typography.Text>
             </div>
         </>

@@ -83,8 +83,8 @@ export const Banner50DataSource = {
         name: "title",
         children: (
           <span>
-            <p>Calculate your</p>
-            <p>tax liabilities</p>
+            <p>Công cụ</p>
+            <p>quản lý thuế cá nhân</p>
           </span>
         ),
         className: "banner5-title",
@@ -98,7 +98,7 @@ export const Banner50DataSource = {
               <span>
                 <span>
                   <p>
-                    Excellent features for you
+                    Dễ dàng tra cứu, quản lý
                     <br />
                   </p>
                 </span>
@@ -114,12 +114,10 @@ export const Banner50DataSource = {
           <span>
             <span>
               <p>
-                We listen and effectively respond to your needs and those of
-                your
+                Tra cứu thông tin, quy định về các loại thuế cá nhân
               </p>
               <p>
-                clients, We are experts at translating those needs into
-                solutions.
+                Thực hiện khai báo và hoàn tất nghĩa vụ thế nhanh chóng
               </p>
             </span>
           </span>
@@ -141,7 +139,7 @@ export const Banner50DataSource = {
                   textDecoration: "none",
                 }}
               >
-                Start tour
+                Bắt đầu
               </Link>
               {/* </p> */}
             </span>
@@ -345,19 +343,8 @@ export const Feature70DataSource = {
         className: "feature7-title-h1",
         children: (
           <span>
-            <p>Our Firm Offers Unparalleled Tax</p>
-            <p>And Accounting Services</p>
-          </span>
-        ),
-      },
-      {
-        name: "content",
-        className: "feature7-title-content",
-        children: (
-          <span>
-            <span>
-              <p>Our Blog</p>
-            </span>
+            <p>Thông tin các loại thuế</p>
+            <p>Và quy định liên quan tới thuế</p>
           </span>
         ),
       },
@@ -741,7 +728,7 @@ export const Feature00DataSource = {
         name: "title",
         children: (
           <span>
-            <p>Our Clients</p>
+            <p>Chủ đề</p>
           </span>
         ),
       },
@@ -770,24 +757,12 @@ export const Feature00DataSource = {
               children: (
                 <span>
                   <span>
-                    <p>Nexon</p>
+                    <p>Thuế thu nhập cá nhân</p>
                   </span>
                 </span>
               ),
             },
-            {
-              name: "content",
-              children: (
-                <span>
-                  <span>
-                    <span>
-                      <p>"It's good that you've shared that with me."</p>
-                    </span>
-                  </span>
-                </span>
-              ),
-              className: "jzj8z9sya9-editor_css",
-            },
+          
           ],
         },
       },
@@ -811,28 +786,12 @@ export const Feature00DataSource = {
               children: (
                 <span>
                   <span>
-                    <p>Deloite</p>
+                    <p>Thuế VAT</p>
                   </span>
                 </span>
               ),
             },
-            {
-              name: "content",
-              children: (
-                <span>
-                  <span>
-                    <span>
-                      <span>
-                        <p>
-                          "l can tellD that you've done some excellent
-                          research."
-                        </p>
-                      </span>
-                    </span>
-                  </span>
-                </span>
-              ),
-            },
+            
           ],
         },
       },
@@ -855,22 +814,11 @@ export const Feature00DataSource = {
               className: "content0-block-title jzjne24af8c-editor_css",
               children: (
                 <span>
-                  <p>VNG</p>
+                  <p>Thuế hàng hoá đặc biệt</p>
                 </span>
               ),
             },
-            {
-              name: "content",
-              children: (
-                <span>
-                  <span>
-                    <span>
-                      <p>"I think that you have made a wonderful choice."</p>
-                    </span>
-                  </span>
-                </span>
-              ),
-            },
+            
           ],
         },
       },
@@ -893,21 +841,11 @@ export const Feature00DataSource = {
               className: "content0-block-title jzjndw5oerk-editor_css",
               children: (
                 <span>
-                  <p>McKingsey</p>
+                  <p>Tổng hợp</p>
                 </span>
               ),
             },
-            {
-              name: "content",
-              children: (
-                <span>
-                  <p>
-                    "l appreciate you being so enthusiastic about following this
-                    up."
-                  </p>
-                </span>
-              ),
-            },
+          
           ],
         },
       },
@@ -921,11 +859,11 @@ export const Feature80DataSource = {
   titleWrapper: {
     className: "feature8-title-wrapper",
     children: [
-      { name: "title", className: "feature8-title-h1", children: "Tax calculation process" },
+      { name: "title", className: "feature8-title-h1", children: "Khai báo thuế" },
       {
         name: "content",
         className: "feature8-title-content",
-        children: "Reliable and time saving",
+        children: "Thực hiện khai báo thuế tại nhà",
       },
     ],
   },
@@ -935,7 +873,7 @@ export const Feature80DataSource = {
       {
         name: "button",
         className: "feature8-button",
-        children: { href: "#", children: "Submit your document" },
+        children: { href: "#", children: "Khai báo ngay" },
       },
     ],
   },
@@ -981,12 +919,12 @@ export const Feature80DataSource = {
                   {
                     name: "title",
                     className: "feature8-block-title",
-                    children: "Submit bills",
+                    children: "Nộp chứng từ",
                   },
                   {
                     name: "content",
                     className: "feature8-block-content",
-                    children: "Upload your bills and documents",
+                    children: "Tải các chứng từ của bạn lên hệ thống",
                   },
                 ],
               },
@@ -1013,13 +951,13 @@ export const Feature80DataSource = {
                   {
                     name: "title",
                     className: "feature8-block-title",
-                    children: "Verify bills",
+                    children: "Xác minh chứng từ",
                   },
                   {
                     name: "content",
                     className: "feature8-block-content",
                     children:
-                      "Post your bills and documents to our tax experts for verification",
+                      "Cơ quan thuế sẽ xác minh chứng từ của bạn",
                   },
                 ],
               },
@@ -1046,13 +984,13 @@ export const Feature80DataSource = {
                   {
                     name: "title",
                     className: "feature8-block-title",
-                    children: "Estimate tax rate ",
+                    children: "Tính toán thuế",
                   },
                   {
                     name: "content",
                     className: "feature8-block-content",
                     children:
-                      "Our tax experts will estimate your tax rate and send you a tax estimate",
+                      "Cơ quan thuế sẽ tính toán số tiền phải trả",
                   },
                 ],
               },
@@ -1079,13 +1017,13 @@ export const Feature80DataSource = {
                   {
                     name: "title",
                     className: "feature8-block-title",
-                    children: "Result analysis",
+                    children: "Trả thông tin",
                   },
                   {
                     name: "content",
                     className: "feature8-block-content",
                     children:
-                      "Our tax experts will analyze your tax result and send you a tax report",
+                      "Dư nợ thuế sẽ được ghi nhận vào tài khoản của bạn",
                   },
                 ],
               },
