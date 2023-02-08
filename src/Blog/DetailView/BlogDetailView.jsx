@@ -4,7 +4,6 @@ import parser, { parserUtils } from './parser';
 import { useLoaderData } from 'react-router-dom';
 import ErrorPage from '../../error-page';
 import NewBlogs from './components/NewPosts';
-import Socials from './components/Socials';
 import Tags from './components/Tags';
 import Category from './components/Category';
 import { resolveImagePath } from '../../app/shared/utils';
