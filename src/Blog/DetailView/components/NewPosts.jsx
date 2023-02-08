@@ -47,7 +47,7 @@ function BlogItem({ postInfo: data, index }) {
 
 export default function NewBlogs({ blogs }) {
     return (
-        <div className="w-full overflow-scroll">
+        <div className="w-full ">
             <Typography.Title level={2} style={{
                 lineHeight: "20px",
                 fontSize: "16px",

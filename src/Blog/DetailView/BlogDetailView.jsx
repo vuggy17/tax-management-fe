@@ -77,9 +77,6 @@ export default function BlogDetailView() {
                   tags={tags || []}
                   data={post ? post : { content: "<div>No content</div>" }}
                 />
-                {/* <div className="mt-10">
-                  <Socials tags={post?.tag || []} />
-                </div> */}
               </div>
             </div>
             <div className='pl-10 border-transparent border-l-product-border border border-solid md:col-span-4'>
@@ -88,28 +85,11 @@ export default function BlogDetailView() {
                   <div className="mb-16 pt-10">
                     <NewBlogs blogs={latestBlogs || []} />
                   </div>
-                  {/* <div className="mb-16">
-                    <div className="w-full">
-                      <div className="bg-secondary w-full text-center text-sm uppercase tracking-wide mb-16 px-4 py-3">
-                        DANH MỤC BÀI VIẾT
-                      </div>
-                      <BlogCategoryBar scrollWhenRedirect={true} />
-                      block category select
-                    </div>
-                  </div> */}
-                  {/* <div className="mb-16">
-                    <Tags tags={tags || []} />
-                  </div> */}
                 </div>
               </Affix>
             </div>
 
           </div>
-
-          {/** Infor block va newsletter */}
-          {/* <div className="mb-10 lg:mb-14">
-            <SubWidget />
-          </div> */}
         </div>
       </div>
     </div>

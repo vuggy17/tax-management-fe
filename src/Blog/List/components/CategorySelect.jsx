@@ -9,6 +9,7 @@ const createSelectOptions = (categories) => {
 export default function CategorySelect({ options, currentCategory, placeholder, onChange }) {
     return (
         <Select
+            defaultValue={currentCategory?.id ?? -1}
             size='large'
             showSearch
             style={{ width: 300 }}

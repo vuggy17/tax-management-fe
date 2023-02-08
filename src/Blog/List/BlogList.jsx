@@ -1,12 +1,14 @@
 
-import React from "react";
+import React, { useCallback, useEffect } from "react";
 import Card from "./components/Card";
 import CategorySelect from "./components/CategorySelect";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useLocation, useSearchParams } from "react-router-dom";
 
 // wrapper component
 export default function BlogList() {
     const pageData = useLoaderData();
+    const { state } = useLocation();
+
     const {
         tags,
         mainSlide,
@@ -16,36 +18,42 @@ export default function BlogList() {
         testimonials,
         categories
     } = pageData || {};
-    console.log('all blog', allBlogs)
 
     const [filteredBlogs, setFilteredBlogs] = React.useState(allBlogs || []);
-    const filterBlogs = (categoryId, name) => {
+    const filterBlogs = useCallback((categoryId) => {
         const STATIC_EMPTY_CATEGORY_ID = 8; // 8 in database, this change if it's db id changes
-        if (name === "Uncategorized" || categoryId === STATIC_EMPTY_CATEGORY_ID) {
-            const filtered = allBlogs.filter((blog) => blog.category.length === 0)
-            console.log('filtered', filtered)
-            setFilteredBlogs(filtered)
-            return;
+
+        const blogsWithCategory = allBlogs.filter((blog) => {
+            if (categoryId === STATIC_EMPTY_CATEGORY_ID) {
+                return blog.category.length === 0;
+            } else if (categoryId > -1) {
+                return blog.category.some(c => c.id === categoryId);
+            } else {
+                return true;
+            }
+
+        });
+        setFilteredBlogs(blogsWithCategory);
+    }, [allBlogs])
+
+
+    useEffect(() => {
+        if (state?.categoryId) {
+            filterBlogs(state.categoryId)
         }
-        if (categoryId > -1) {
-            const filtered = allBlogs.filter((blog) => blog.category.some(c => c.id === categoryId))
-            console.log('filtered', filtered)
-            setFilteredBlogs(filtered)
-        } else {
-            setFilteredBlogs(allBlogs)
-        }
-    }
+    }, [state])
+
     return (
         <div style={{ margin: "auto", maxWidth: "1200px" }}>
             <div className=" item mx-0 mb-9 pt-10">
                 <CategorySelect
                     options={categories}
-                    currentCategory={currentCategory}
+                    currentCategory={{ id: state?.categoryId}}
                     placeholder="Select a subject"
                     onChange={(value, option) => {
                         console.log('value selected: ', value)
                         console.log('option selected: ', option)
-                        filterBlogs(value, option.label)
+                        filterBlogs(value)
                     }}
                 />
             </div>

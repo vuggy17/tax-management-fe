@@ -29,7 +29,7 @@ const customParser = {
     if (data.file.url == undefined) {
       return `
       <div class="flex w-full justify-center border border-product-border border-solid">
-        <img class="ant-image-img max-h-[200px] max-w-full object-cover" src="${getFallBackImage()}" alt="Image could not load" />
+        <img class="ant-image-img max-h-[200px] max-w-full object-cover" lazy src="${getFallBackImage()}" alt="Image could not load" />
       </div>
         <div class="w-full text-center italic text-md">${data.caption}</div>
         `;

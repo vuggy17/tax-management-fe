@@ -10,7 +10,9 @@ export default function ChildCategory({ category }) {
         <div className="flex">
             {parentCategory ? (
                 <>
-                    <Link to={`/category/${parentCategory.path}`}>
+                    <Link to={`/blog?category=${parentCategory.path}`} state={{
+                        categoryId: parentCategory.id
+                    }}>
                         <div className="cursor-pointer hover:text-gray-800 transition duration-300 ease-linear">
                             {parentCategory.name}
                         </div>
@@ -22,7 +24,9 @@ export default function ChildCategory({ category }) {
             )}
             {mainCategory ? (
                 <>
-                    <Link to={`/category/${mainCategory.path}`}>
+                    <Link to={`/blog?category=${mainCategory.path}`} state={{
+                        categoryId: mainCategory.id
+                    }}>
                         <div className="cursor-pointer hover:text-gray-800 transition duration-300 ease-linear">
                             {mainCategory.name}
                         </div>
