@@ -1,4 +1,4 @@
-import customBlockStyle from "./style.css";
+import customBlockStyle from "./style.css?inline";
 import edjsParser from "editorjs-parser";
 import { getFallBackImage, resolveImagePath } from "../../app/shared/utils";
 function addStr(str, index, stringToAdd) {

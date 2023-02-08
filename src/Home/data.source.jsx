@@ -1,3 +1,4 @@
+import { Typography } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
 export const Nav30DataSource = {
@@ -12,62 +13,62 @@ export const Nav30DataSource = {
   Menu: {
     className: "header3-menu",
     children: [
-      {
-        name: "item1",
-        className: "header3-item",
-        children: {
-          href: "#",
-          children: [
-            {
-              children: (
-                <span>
-                  <span>
-                    <p>Find tax</p>
-                  </span>
-                </span>
-              ),
-              name: "text",
-            },
-          ],
-        },
-        subItem: [
-          {
-            className: "item-sub",
-            children: {
-              className: "item-sub-item jzj8295azrs-editor_css",
-              children: [
-                {
-                  name: "image0",
-                  className: "item-image jzj81c9wabh-editor_css",
-                  children:
-                    "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*4_S6ToPfj-QAAAAAAAAAAABkARQnAQ",
-                },
-              ],
-            },
-            name: "sub~jzj8hceysgj",
-          },
-        ],
-      },
-      {
-        name: "item2",
-        className: "header3-item",
-        children: {
-          href: "#",
-          children: [
-            {
-              children: (
-                <span>
-                  <p>
-                    Tax Declaration
-                    <br />
-                  </p>
-                </span>
-              ),
-              name: "text",
-            },
-          ],
-        },
-      },
+      // {
+      //   name: "item1",
+      //   className: "header3-item",
+      //   children: {
+      //     href: "#",
+      //     children: [
+      //       {
+      //         children: (
+      //           <span>
+      //             <span>
+      //               <p>Find tax</p>
+      //             </span>
+      //           </span>
+      //         ),
+      //         name: "text",
+      //       },
+      //     ],
+      //   },
+      //   subItem: [
+      //     {
+      //       className: "item-sub",
+      //       children: {
+      //         className: "item-sub-item jzj8295azrs-editor_css",
+      //         children: [
+      //           {
+      //             name: "image0",
+      //             className: "item-image jzj81c9wabh-editor_css",
+      //             children:
+      //               "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*4_S6ToPfj-QAAAAAAAAAAABkARQnAQ",
+      //           },
+      //         ],
+      //       },
+      //       name: "sub~jzj8hceysgj",
+      //     },
+      //   ],
+      // },
+      // {
+      //   name: "item2",
+      //   className: "header3-item",
+      //   children: {
+      //     href: "#",
+      //     children: [
+      //       {
+      //         children: (
+      //           <span>
+      //             <p>
+      //               Tax Declaration
+      //               <br />
+      //             </p>
+      //           </span>
+      //         ),
+      //         name: "text",
+      //       },
+      //     ],
+      //   },
+      // },
     ],
   },
   mobileMenu: { className: "header3-mobile-menu" },
@@ -128,7 +129,6 @@ export const Banner50DataSource = {
         name: "button",
         className: "banner5-button-wrapper",
         children: {
-          href: "#",
           className: "banner5-button",
           type: "primary",
           children: (
@@ -277,59 +277,59 @@ export const Feature60DataSource = {
           },
         ],
       },
-      {
-        title: {
-          className: "feature6-title-text",
-          children: (
-            <span>
-              <p>Today tax caculation</p>
-            </span>
-          ),
-        },
-        className: "feature6-item",
-        name: "block1",
-        children: [
-          {
-            md: 8,
-            xs: 24,
-            name: "child0",
-            className: "feature6-number-wrapper",
-            number: {
-              className: "feature6-number",
-              unit: { className: "feature6-unit", children: "万" },
-              toText: true,
-              children: "116",
-            },
-            children: { className: "feature6-text", children: "模型数据" },
-          },
-          {
-            md: 8,
-            xs: 24,
-            name: "child1",
-            className: "feature6-number-wrapper",
-            number: {
-              className: "feature6-number",
-              unit: { className: "feature6-unit", children: "亿" },
-              toText: true,
-              children: "1.17",
-            },
-            children: { className: "feature6-text", children: "模型迭代数量" },
-          },
-          {
-            md: 8,
-            xs: 24,
-            name: "child2",
-            className: "feature6-number-wrapper",
-            number: {
-              className: "feature6-number",
-              unit: { className: "feature6-unit", children: "亿" },
-              toText: true,
-              children: "2.10",
-            },
-            children: { className: "feature6-text", children: "训练样本数量" },
-          },
-        ],
-      },
+      // {
+      //   title: {
+      //     className: "feature6-title-text",
+      //     children: (
+      //       <span>
+      //         <p>Today tax caculation</p>
+      //       </span>
+      //     ),
+      //   },
+      //   className: "feature6-item",
+      //   name: "block1",
+      //   children: [
+      //     {
+      //       md: 8,
+      //       xs: 24,
+      //       name: "child0",
+      //       className: "feature6-number-wrapper",
+      //       number: {
+      //         className: "feature6-number",
+      //         unit: { className: "feature6-unit", children: "万" },
+      //         toText: true,
+      //         children: "116",
+      //       },
+      //       children: { className: "feature6-text", children: "模型数据" },
+      //     },
+      //     {
+      //       md: 8,
+      //       xs: 24,
+      //       name: "child1",
+      //       className: "feature6-number-wrapper",
+      //       number: {
+      //         className: "feature6-number",
+      //         unit: { className: "feature6-unit", children: "亿" },
+      //         toText: true,
+      //         children: "1.17",
+      //       },
+      //       children: { className: "feature6-text", children: "模型迭代数量" },
+      //     },
+      //     {
+      //       md: 8,
+      //       xs: 24,
+      //       name: "child2",
+      //       className: "feature6-number-wrapper",
+      //       number: {
+      //         className: "feature6-number",
+      //         unit: { className: "feature6-unit", children: "亿" },
+      //         toText: true,
+      //         children: "2.10",
+      //       },
+      //       children: { className: "feature6-text", children: "训练样本数量" },
+      //     },
+      //   ],
+      // },
     ],
   },
 };
@@ -404,7 +404,7 @@ export const Feature70DataSource = {
                     </p>
                     <p>
                       clients, We ate experts at translating those needs into
-                      solut»ons.
+                      solutions.
                     </p>
                   </span>
                 </span>
@@ -454,7 +454,7 @@ export const Feature70DataSource = {
                     </p>
                     <p>
                       clients, We ate experts at translating those needs into
-                      solut»ons.
+                      solutions.
                     </p>
                   </span>
                 </span>
@@ -499,7 +499,7 @@ export const Feature70DataSource = {
                   </p>
                   <p>
                     clients, We ate experts at translating those needs into
-                    solut»ons.
+                    solutions.
                   </p>
                 </span>
               ),
@@ -543,7 +543,7 @@ export const Feature70DataSource = {
                   </p>
                   <p>
                     clients, We ate experts at translating those needs into
-                    solut»ons.
+                    solutions.
                   </p>
                 </span>
               ),
@@ -587,7 +587,7 @@ export const Feature70DataSource = {
                   </p>
                   <p>
                     clients, We ate experts at translating those needs into
-                    solut»ons.
+                    solutions.
                   </p>
                 </span>
               ),
@@ -631,7 +631,7 @@ export const Feature70DataSource = {
                   </p>
                   <p>
                     clients, We ate experts at translating those needs into
-                    solut»ons.
+                    solutions.
                   </p>
                 </span>
               ),
@@ -675,7 +675,7 @@ export const Feature70DataSource = {
                   </p>
                   <p>
                     clients, We ate experts at translating those needs into
-                    solut»ons.
+                    solutions.
                   </p>
                 </span>
               ),
@@ -719,7 +719,7 @@ export const Feature70DataSource = {
                   </p>
                   <p>
                     clients, We ate experts at translating those needs into
-                    solut»ons.
+                    solutions.
                   </p>
                 </span>
               ),
@@ -921,11 +921,11 @@ export const Feature80DataSource = {
   titleWrapper: {
     className: "feature8-title-wrapper",
     children: [
-      { name: "title", className: "feature8-title-h1", children: "使用流程" },
+      { name: "title", className: "feature8-title-h1", children: "Tax calculation process" },
       {
         name: "content",
         className: "feature8-title-content",
-        children: "流程简单清晰，快速响应需求",
+        children: "Reliable and time saving",
       },
     ],
   },
@@ -935,7 +935,7 @@ export const Feature80DataSource = {
       {
         name: "button",
         className: "feature8-button",
-        children: { href: "#", children: "立即体验" },
+        children: { href: "#", children: "Submit your document" },
       },
     ],
   },
@@ -956,7 +956,7 @@ export const Feature80DataSource = {
           gutter: 120,
           title: {
             className: "feature8-carousel-title-block",
-            children: "平台自主训练流程",
+            children: "Tax calculation process",
           },
           children: [
             {
@@ -981,12 +981,12 @@ export const Feature80DataSource = {
                   {
                     name: "title",
                     className: "feature8-block-title",
-                    children: "需求沟通",
+                    children: "Submit bills",
                   },
                   {
                     name: "content",
                     className: "feature8-block-content",
-                    children: "沟通业务需求，对接人：诚凡、芸彩",
+                    children: "Upload your bills and documents",
                   },
                 ],
               },
@@ -1013,13 +1013,13 @@ export const Feature80DataSource = {
                   {
                     name: "title",
                     className: "feature8-block-title",
-                    children: "需求沟通",
+                    children: "Verify bills",
                   },
                   {
                     name: "content",
                     className: "feature8-block-content",
                     children:
-                      "沟通业务需求，对接人：诚凡、芸彩沟通业务需求，对接人：诚凡、芸彩",
+                      "Post your bills and documents to our tax experts for verification",
                   },
                 ],
               },
@@ -1046,13 +1046,13 @@ export const Feature80DataSource = {
                   {
                     name: "title",
                     className: "feature8-block-title",
-                    children: "需求沟通",
+                    children: "Estimate tax rate ",
                   },
                   {
                     name: "content",
                     className: "feature8-block-content",
                     children:
-                      "沟通业务需求，对接人：诚凡、芸彩沟通业务需求，对接人：诚凡、芸彩",
+                      "Our tax experts will estimate your tax rate and send you a tax estimate",
                   },
                 ],
               },
@@ -1079,13 +1079,13 @@ export const Feature80DataSource = {
                   {
                     name: "title",
                     className: "feature8-block-title",
-                    children: "需求沟通",
+                    children: "Result analysis",
                   },
                   {
                     name: "content",
                     className: "feature8-block-content",
                     children:
-                      "沟通业务需求，对接人：诚凡、芸彩沟通业务需求，对接人：诚凡、芸彩",
+                      "Our tax experts will analyze your tax result and send you a tax report",
                   },
                 ],
               },
@@ -1097,7 +1097,7 @@ export const Feature80DataSource = {
           className: "feature8-block-row",
           gutter: 120,
           title: {
-            children: "平台自主训练流程",
+            children: "Tax reminder process",
             className: "feature8-carousel-title-block",
           },
           children: [
@@ -1123,12 +1123,12 @@ export const Feature80DataSource = {
                   {
                     name: "title",
                     className: "feature8-block-title",
-                    children: "需求沟通",
+                    children: "Set a reminder",
                   },
                   {
                     name: "content",
                     className: "feature8-block-content",
-                    children: "沟通业务需求，对接人：诚凡、芸彩",
+                    children: "Set a reminder for your tax due date",
                   },
                 ],
               },
@@ -1155,13 +1155,13 @@ export const Feature80DataSource = {
                   {
                     name: "title",
                     className: "feature8-block-title",
-                    children: "需求沟通",
+                    children: "Receive a reminder",
                   },
                   {
                     name: "content",
                     className: "feature8-block-content",
                     children:
-                      "沟通业务需求，对接人：诚凡、芸彩沟通业务需求，对接人：诚凡、芸彩",
+                      "Receive a reminder from our tax experts before your tax due date",
                   },
                 ],
               },
@@ -1188,13 +1188,13 @@ export const Feature80DataSource = {
                   {
                     name: "title",
                     className: "feature8-block-title",
-                    children: "需求沟通",
+                    children: "Pay tax",
                   },
                   {
                     name: "content",
                     className: "feature8-block-content",
                     children:
-                      "沟通业务需求，对接人：诚凡、芸彩沟通业务需求，对接人：诚凡、芸彩",
+                      "Our system will automatically remind you to pay your tax",
                   },
                 ],
               },
@@ -1221,13 +1221,13 @@ export const Feature80DataSource = {
                   {
                     name: "title",
                     className: "feature8-block-title",
-                    children: "需求沟通",
+                    children: "Happy work life",
                   },
                   {
                     name: "content",
                     className: "feature8-block-content",
                     children:
-                      "沟通业务需求，对接人：诚凡、芸彩沟通业务需求，对接人：诚凡、芸彩",
+                      "You can focus on your work and leave the tax to us",
                   },
                 ],
               },
@@ -1249,20 +1249,20 @@ export const Footer10DataSource = {
         name: "block0",
         xs: 24,
         md: 8,
-        className: "block",
         title: {
           className: "logo jzl0qcpyjra-editor_css",
           children:
-            "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*GzZ-QqkpH4AAAAAAAAAAAABkARQnAQ",
+            "https://res.cloudinary.com/dkjhojumq/image/upload/v1675831601/samples/logo_leocrs.png",
         },
         childWrapper: {
           className: "slogan",
           children: [
             {
-              name: "content0", children: <p>Calculate your
-                tax liabilities</p>
+              children: <p>Calculate your tax liabilities</p>,
+              name: "0title",
             },
           ],
+
         },
       },
       {
@@ -1270,22 +1270,26 @@ export const Footer10DataSource = {
         xs: 24,
         md: 8,
         className: "block",
-        title: { children: <p>联系我们</p> },
+        title: { children: <p>Find us on Facebook</p> },
         childWrapper: {
           children: [
             {
               name: "image~jzl0tcm4f1d",
               className: "",
               children:
-                "https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*NoENTI5uyn4AAAAAAAAAAABkARQnAQ",
+                "https://res.cloudinary.com/dkjhojumq/image/upload/c_scale,h_132/v1675828364/samples/uit-qr_hgtfiq.png",
             },
             {
               href: "#",
               name: "link0",
-              children: <p>图鹰对接答疑钉钉群</p>,
-              className: "jzl0u1bko6-editor_css",
+              children: <a href="https://www.uit.edu.vn/">
+                <Typography.Text style={{
+                  color: "#999"
+                }}>https://www.uit.edu.vn</Typography.Text>
+              </a>,
+              className: "jzl0u1bko6-editor_css ",
             },
-            { href: "#", name: "link1", children: "联系我们" },
+            { href: "#", name: "link1", children: "" },
           ],
         },
       },
@@ -1294,7 +1298,7 @@ export const Footer10DataSource = {
         xs: 24,
         md: 8,
         className: "block",
-        title: { children: "资源" },
+        title: { children: "Sponsored by" },
         childWrapper: {
           children: [
             { href: "#", name: "link0", children: "Ant Design" },

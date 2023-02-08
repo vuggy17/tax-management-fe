@@ -7,6 +7,7 @@ import axios from "./api.config";
  */
 export async function getBlogs(cancelSignal) {
   const getTags = axios.get("landing/tag").then((res) => res.data);
+  const getCategories = axios.get("landing/category").then((res) => res.data);
   const getSlides = axios
     .get("landing/slide/allblog")
     .then((res) => {
@@ -45,6 +46,7 @@ export async function getBlogs(cancelSignal) {
     getBlogs,
     getLatestBlogs,
     getTestimonials,
+    getCategories,
   ])
     .then((...response) => {
       const tags = response[0][0];
@@ -52,7 +54,15 @@ export async function getBlogs(cancelSignal) {
       const allBlogs = response[0][2];
       const latestBlogs = response[0][3];
       const testimonials = response[0][4];
-      return { tags, mainSlide, allBlogs, latestBlogs, testimonials };
+      const categories = response[0][5];
+      return {
+        tags,
+        mainSlide,
+        allBlogs,
+        latestBlogs,
+        testimonials,
+        categories,
+      };
     })
     .catch((error) => {
       return null;

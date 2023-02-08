@@ -27,7 +27,7 @@ export default function Category({ data }) {
         <div className="flex text-primary max-w-max">
             {parentCategory ? (
                 <>
-                    <Link passHref href={`/category/${parentCategory.path}`}>
+                    <Link to={`/category/${parentCategory.path}`}>
                         <div className="cursor-pointer hover:text-gray-800 transition duration-300 ease-linear">
                             {parentCategory.name}
                         </div>
@@ -39,7 +39,7 @@ export default function Category({ data }) {
             )}
             {mainCategory ? (
                 <>
-                    <Link passHref href={`/category/${mainCategory.path}`}>
+                    <Link to={`/category/${mainCategory.path}`}>
                         <div className="cursor-pointer hover:text-gray-800 transition duration-300 ease-linear">
                             {mainCategory.name}
                         </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, Typography } from 'antd';
 import { Link } from 'react-router-dom';
 import './card.style.css'
+import CategorySelect from '../Blog/List/components/CategorySelect';
 const { Meta } = Card;
 
 export default function QuickStart() {

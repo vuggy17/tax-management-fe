@@ -10,7 +10,7 @@ export default function ChildCategory({ category }) {
         <div className="flex">
             {parentCategory ? (
                 <>
-                    <Link passHref href={`/category/${parentCategory.path}`}>
+                    <Link to={`/category/${parentCategory.path}`}>
                         <div className="cursor-pointer hover:text-gray-800 transition duration-300 ease-linear">
                             {parentCategory.name}
                         </div>
@@ -22,7 +22,7 @@ export default function ChildCategory({ category }) {
             )}
             {mainCategory ? (
                 <>
-                    <Link passHref href={`/category/${mainCategory.path}`}>
+                    <Link to={`/category/${mainCategory.path}`}>
                         <div className="cursor-pointer hover:text-gray-800 transition duration-300 ease-linear">
                             {mainCategory.name}
                         </div>
